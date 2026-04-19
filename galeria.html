@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Jorge Peixoto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Jorge Peixoto Logo" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="galeria.html" class="nav-link active">Galeria</a></li>
+                <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Galeria de Projetos</h1>
+            <p>Veja algumas das transformações que realizamos. Deslize para comparar o antes e o depois.</p>
+        </div>
+    </section>
+
+
+    
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Project 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-text">
+                        <h3>Renovação da Claraboia</h3>
+                        <p>Substituição completa da claraboia antiga por um sistema moderno, com isolamento térmico e acústico reforçado.</p>
+                        <ul class="project-features">
+                            <li> Isolamento Superior</li>
+                            <li> Design Moderno</li>
+                            <li> Aumento da luz natural</li>
+                        </ul>
+                    </div>
+                    <div class="before-after-slider" id="slider1">
+                        <img src="images/kitchen-after.jpg" alt="Depois" class="slider-after">
+                        <div class="slider-before-container">
+                            <img src="images/kitchen-before.jpg" alt="Antes" class="slider-before">
+                        </div>
+                        <div class="slider-handle">
+                            <div class="slider-thumb">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="slider-label before">Antes</span>
+                        <span class="slider-label after">Depois</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="gallery-item reverse">
+                    <div class="gallery-text">
+                        <h3>Remodelação de Casa de Banho</h3>
+                        <p>Remodelação completa com um aspeto mais moderno, ao gosto do cliente. Um espaço aconchegante e funcional.</p>
+                        <ul class="project-features">
+                            <li> Acabamentos de Luxo</li>
+                            <li> Design Moderno</li>
+                            <li> Iluminação Personalizada</li>
+                        </ul>
+                    </div>
+                    <div class="before-after-slider" id="slider2">
+                        <img src="images/bathroom-after.jpg" alt="Depois" class="slider-after">
+                        <div class="slider-before-container">
+                            <img src="images/bathroom-before.jpg" alt="Antes" class="slider-before">
+                        </div>
+                        <div class="slider-handle">
+                            <div class="slider-thumb">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="slider-label before">Antes</span>
+                        <span class="slider-label after">Depois</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Mais Interesse?</h2>
+            <p>Veja o nosso Instagram para mais demontrações de projetos.</p>
+            <a href="https://www.instagram.com/jorgepeixoto.jobs" class="btn btn-primary">Nosso Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/logo.png" alt="Jorge Peixoto" class="footer-logo">
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Telefone: +351 965 777 679<br>
+                    Email: jrgpxt@gmail.com<br></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jorge Peixoto. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
