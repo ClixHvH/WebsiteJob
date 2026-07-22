@@ -34,54 +34,75 @@
     <section class="page-header">
         <div class="container">
             <h1>Entre em Contacto</h1>
-            <p>Estamos prontos para transformar o seu espaço. Contacte-nos hoje.</p>
+            <p>Estamos prontos para transformar o seu espaço. Peça o seu orçamento gratuito hoje.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact-section-new">
         <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h2>Informações de Contacto</h2>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4>Instagram</h4>
-                            <p><a href="https://www.instagram.com/jorgepeixoto.jobs">Clique Aqui</a></p>
-                        </div>
+            <!-- Contact Info Cards -->
+            <div class="contact-info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
                     </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="2" y="4" width="20" height="16" rx="2"/>
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4>Email</h4>
-                            <p><a href="mailto:jorgepeixotojobs@gmail.com">jorgepeixotojobs@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="1"/>
-                                <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4>Horário</h4>
-                            <p>Segunda a Sexta: 9h - 18h<br>Sábado: 9h - 12h</p>
-                        </div>
-                    </div>
+                    <h3>Instagram</h3>
+                    <a href="https://www.instagram.com/jorgepeixoto.jobs" target="_blank">@jorgepeixoto.jobs</a>
                 </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <a href="mailto:jorgepeixotojobs@gmail.com">jorgepeixotojobs@gmail.com</a>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Horário</h3>
+                    <p>Seg - Sex: 9h - 18h<br>Sáb: 9h - 12h</p>
+                </div>
+            </div>
+
+            <!-- Centered Form -->
+            <div class="form-container-centered">
+                <h2>Peça o seu Orçamento</h2>
+                <form action="https://formspree.io/f/xojglyzo" method="POST" class="contact-form-large" id="contactForm">
+                    <!-- Dynamic Subject Line for Formspree -->
+                    <input type="hidden" name="_subject" id="emailSubject" value="Novo Pedido de Orçamento">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="Nome" placeholder="O seu nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Número de Telemóvel</label>
+                            <input type="tel" id="phone" name="Telefone" placeholder="O seu número de contacto" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Localização do Trabalho</label>
+                        <input type="text" id="location" name="Localizacao" placeholder="Onde será realizado o trabalho?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrição do Trabalho</label>
+                        <textarea id="description" name="Descricao" rows="6" placeholder="Descreva brevemente o que pretende fazer" required></textarea>
+                    </div>
+                    <!-- Honeypot for spam filtration -->
+                    <input type="text" name="_gotcha" style="display:none">
+                    <button type="submit" class="btn btn-primary btn-large">Enviar Pedido de Orçamento</button>
+                </form>
             </div>
         </div>
     </section>
@@ -101,11 +122,6 @@
                         <li><a href="servicos.html">Serviços</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <p><a href="https://www.instagram.com/jorgepeixoto.jobs">Instagram</a><br>
-                    Email: jorgepeixotojobs@gmail.com<br></p>
                 </div>
             </div>
             <div class="footer-bottom">

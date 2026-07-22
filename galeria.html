@@ -34,26 +34,21 @@
     <section class="page-header">
         <div class="container">
             <h1>Galeria de Projetos</h1>
-            <p>Veja algumas das transformações que realizamos. Deslize para comparar o antes e o depois.</p>
+            <p>Veja algumas das transformações que realizamos. Deslize para comparar o antes e o depois ou veja os nossos vídeos de demonstração.</p>
         </div>
     </section>
 
-
-    
-    <!-- Gallery Section -->
+    <!-- Gallery Section - Images -->
     <section class="gallery">
         <div class="container">
+            <h2 class="section-title">Antes e Depois</h2>
             <div class="gallery-grid">
-                <!-- Project 1 -->
+                
+                <!-- Project 1: Kitchen -->
                 <div class="gallery-item">
                     <div class="gallery-text">
                         <h3>Remodelação de Cozinha</h3>
                         <p>Transformação completa para uma cozinha moderna, totalmente adaptada às necessidades do seu dia a dia.</p>
-                        <ul class="project-features">
-                            <li> Materiais de Alta Qualidade</li>
-                            <li> Design Ergonómico</li>
-                            <li> Otimização de Espaço</li>
-                        </ul>
                     </div>
                     <div class="before-after-slider" id="slider1">
                         <img src="images/kitchen-after.jpg" alt="Depois" class="slider-after">
@@ -73,16 +68,11 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2: Bathroom -->
                 <div class="gallery-item reverse">
                     <div class="gallery-text">
                         <h3>Remodelação de Casa de Banho</h3>
                         <p>Remodelação completa com um aspeto mais moderno, ao gosto do cliente. Um espaço aconchegante e funcional.</p>
-                        <ul class="project-features">
-                            <li> Acabamentos de Luxo</li>
-                            <li> Design Moderno</li>
-                            <li> Iluminação Personalizada</li>
-                        </ul>
                     </div>
                     <div class="before-after-slider" id="slider2">
                         <img src="images/bathroom-after.jpg" alt="Depois" class="slider-after">
@@ -101,6 +91,82 @@
                         <span class="slider-label after">Depois</span>
                     </div>
                 </div>
+
+                <!-- Project 3: Living Room -->
+                <div class="gallery-item">
+                    <div class="gallery-text">
+                        <h3>Remodelação Total</h3>
+                        <p>Criação de um ambiente amplo e luminoso, com bom aproveitamento de espaço.</p>
+                    </div>
+                    <div class="before-after-slider" id="slider3">
+                        <img src="images/living-room-after.jpg" alt="Depois" class="slider-after">
+                        <div class="slider-before-container">
+                            <img src="images/living-room-before.jpg" alt="Antes" class="slider-before">
+                        </div>
+                        <div class="slider-handle">
+                            <div class="slider-thumb">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="slider-label before">Antes</span>
+                        <span class="slider-label after">Depois</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: Bedroom -->
+                <div class="gallery-item reverse">
+                    <div class="gallery-text">
+                        <h3>Renovação Parcial</h3>
+                        <p>Renovação e modernização do hall de entrada ao gosto do cliente.</p>
+                    </div>
+                    <div class="before-after-slider" id="slider4">
+                        <img src="images/bedroom-after.jpg" alt="Depois" class="slider-after">
+                        <div class="slider-before-container">
+                            <img src="images/bedroom-before.jpg" alt="Antes" class="slider-before">
+                        </div>
+                        <div class="slider-handle">
+                            <div class="slider-thumb">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="slider-label before">Antes</span>
+                        <span class="slider-label after">Depois</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Videos -->
+    <section class="video-gallery">
+        <div class="container">
+            <h2 class="section-title">Vídeos de Demonstração</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/renovation1.mp4" type="video/mp4">
+                        O seu navegador não suporta vídeos.
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/renovation2.mp4" type="video/mp4">
+                        O seu navegador não suporta vídeos.
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/renovation3.mp4" type="video/mp4">
+                        O seu navegador não suporta vídeos.
+                    </video>
+                </div>
             </div>
         </div>
     </section>
@@ -108,9 +174,12 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Mais Interesse?</h2>
-            <p>Veja o nosso Instagram para mais demontrações de projetos.</p>
-            <a href="https://www.instagram.com/jorgepeixoto.jobs" class="btn btn-primary">Nosso Instagram</a>
+            <h2>Interessado num orçamento?</h2>
+            <p>Veja o nosso Instagram para mais demonstrações de projetos ou contacte-nos diretamente.</p>
+            <div class="cta-buttons">
+                <a href="https://www.instagram.com/jorgepeixoto.jobs" target="_blank" class="btn btn-secondary">Nosso Instagram</a>
+                <a href="contacto.html" class="btn btn-primary">Pedir Orçamento</a>
+            </div>
         </div>
     </section>
 
@@ -129,11 +198,6 @@
                         <li><a href="servicos.html">Serviços</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <p><a href="https://www.instagram.com/jorgepeixoto.jobs">Instagram</a><br>
-                    Email: jorgepeixotojobs@gmail.com<br></p>
                 </div>
             </div>
             <div class="footer-bottom">
